@@ -1,0 +1,24 @@
+spring:
+   application:
+      name: jiren-config
+   cloud:
+      config:
+         server:
+            native:
+               search-locations: "./../jiren-config-files"
+   autoconfigure:
+      exclude: org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration,org.springframework.boot.actuate.autoconfigure.security.servlet.ManagementWebSecurityAutoConfiguration
+
+server:
+   port: 7184
+   security:
+      user:
+         name: diadia
+         password: diadia.2021
+
+logging:
+   level:
+      org.springframework: INFO
+      com.mkyong: DEBUG
+   pattern:
+      console: "%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"

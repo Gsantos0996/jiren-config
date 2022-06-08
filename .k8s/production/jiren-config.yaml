@@ -1,0 +1,91 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jiren-config
+  labels:
+    app: jiren-config
+spec:
+  revisionHistoryLimit: 5
+  replicas: 1
+  progressDeadlineSeconds: 340
+  selector:
+    matchLabels:
+      app: jiren-config
+  template:
+    metadata:
+      labels:
+        app: jiren-config
+    spec:
+      containers:
+      - name: jiren-config
+        image: ghcr.io/katu-digital/jiren-config:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 7184
+        env:
+          - name: SPRING_PROFILES_ACTIVE
+            value: default,k8s
+          - name: SPRING_APPLICATION_JSON
+            valueFrom:
+              secretKeyRef:
+                name: config-server-git-auth
+                key: SPRING_APPLICATION_JSON
+        readinessProbe:
+          httpGet:
+            path: /actuator/health
+            port: 7184
+          initialDelaySeconds: 200
+          periodSeconds: 15
+        livenessProbe:
+          httpGet:
+            path: /actuator/health
+            port: 7184
+          initialDelaySeconds: 230
+          periodSeconds: 30
+        resources:
+          limits:
+            memory: 750Mi
+            cpu: 0.5
+          requests:
+            memory: 500Mi
+            cpu: 0.25
+      imagePullSecrets:
+      - name: regcred
+---
+apiVersion: autoscaling/v2beta2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: jiren-config
+  namespace: katu
+  labels:
+    app: jiren-config
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: jiren-config
+  minReplicas: 1
+  maxReplicas: 5
+  metrics:
+  - type: Resource
+    resource:
+      name: cpu
+      target:
+        type: Utilization
+        averageUtilization: 75
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: jiren-config
+  namespace: katu
+  labels:
+    app: jiren-config
+spec:
+  type: NodePort
+  selector:
+    app: jiren-config
+  ports:
+  - protocol: TCP
+    port: 7184
+    targetPort: 7184

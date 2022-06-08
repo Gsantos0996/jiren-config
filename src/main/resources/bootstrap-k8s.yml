@@ -1,0 +1,64 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/katu-digital/jiren-config-files.git
+          default-label: main
+          ignoreLocalSshSettings: true
+          hostKey: AAAAB3NzaC1yc2EAAAADAQABAAACAQDhfRg9DBU0m4AA9DsnL//HdUdPebdODxrwZtGs/hQZ96lXsmY1tvjUZvGC+WQ0XebG/oBRYsbl94DlbNFU/aHU603kcIiWL+o/aJeb5oYRsDRYW4au4ULtOZCs5bm+8urW9cHeLcd0RF0Bql4C2S7cQIDU2UdkhlEIDmwmjdNQdGBC+gzs36cHUWvilqZDSId+L9YjRGDAzUe1PxjWQMn9vqIpNCi1UJum2WN4q27UgXJ8LGpeOO8qgGuADofdwVbhdID6mQu7u1NBdr1ngKGFC5+kZgcdbv6DFn1QKlXXj/wtkoID9gfpR6ZCMTuy4yaWYdt9Bpbr7iV52yK2L2R2Wmn2RKwN+DuaxRSrz7/tqJgh/HBw0xSlt2olYa0YyOId0ywM6clIpkCiPIEPpcuSEjjSV+Qpk6cybMjrmin2p9lx8ZRm9sUq6H4ZF2Hmc1qb9194sON7bqR7lVEGPIz2F6zfqk+FR/g+P382fLB3ncImHrEhppMf37phjvE0MlWN6D8jLhP5Ji5yRB5Kz/oGU/luscwTN0qOYIpXvdumah/Xq4usm/1GOfLldlCu0O/DJZMbIefhfIrI8rscYV0qA3grP737PJV3+ozvWDiW8P81Tt8LoD6hhoQcEIqrkPJj1an61+eikbpAK3APl/+7sBynh3/3nBuwdn8w20UA2w==
+          hostKeyAlgorithm: ssh-rsa
+          strictHostKeyChecking: false
+          privateKey: |
+                        -----BEGIN OPENSSH PRIVATE KEY-----
+                        b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAACFwAAAAdzc2gtcn
+                        NhAAAAAwEAAQAAAgEA4X0YPQwVNJuAAPQ7Jy//x3VHT3m3Tg8a8GbRrP4UGfepV7JmNbb4
+                        1GbxgvlkNF3mxv6AUWLG5feA5WzRVP2h1OtN5HCIli/qP2iXm+aGEbA0WFuGruFC7TmQrO
+                        W5vvLq1vXB3i3HdERdAapeAtku3ECA1NlHZIZRCA5sJo3TUHRgQvoM7N+nB1Fr4pamQ0iH
+                        fi/WI0RgwM1HtT8Y1kDJ/b6iKTQotVCbptljeKtu1IFyfCxqXjjvKoBrgA6H3cFW4XSA+p
+                        kLu7tTQXa9Z4ChhQufpGYHHW7+gxZ9UCpV14/8LZKCA/YH6UemQjE7suMmlmHbfQaW6+4l
+                        edsiti9kdlpp9kSsDfg7msUUq8+/7aiYIfxwcNMUpbdqJWGtGMjiHdMsDOnJSKZAojyBD6
+                        XLkhI40lfkKZOnMmzI65op9qfZcfGUZvbFKuh+GRdh5nNam/dfeLDje26ke5VRBjyM9hes
+                        36pPhUf4Pj9/Nnywd53CJh6xIaaTH9+6YY7xNDJVjeg/Iy4T+SYuckQeSs/6BlP5brHMEz
+                        dKjmCKV73bpmof16uLrJv9Rjny5XZQrtDvwyWTGyHn4XyKyPK7HGFdKgN4Kz+9+zyVd/qM
+                        71g4lvD/NU7fC6A+oYaEHBCKq5DyY9Wp+tfnopG6QCtwD5f/u7Acp4d/95wbsHZ/MNtFAN
+                        sAAAdI4H00suB9NLIAAAAHc3NoLXJzYQAAAgEA4X0YPQwVNJuAAPQ7Jy//x3VHT3m3Tg8a
+                        8GbRrP4UGfepV7JmNbb41GbxgvlkNF3mxv6AUWLG5feA5WzRVP2h1OtN5HCIli/qP2iXm+
+                        aGEbA0WFuGruFC7TmQrOW5vvLq1vXB3i3HdERdAapeAtku3ECA1NlHZIZRCA5sJo3TUHRg
+                        QvoM7N+nB1Fr4pamQ0iHfi/WI0RgwM1HtT8Y1kDJ/b6iKTQotVCbptljeKtu1IFyfCxqXj
+                        jvKoBrgA6H3cFW4XSA+pkLu7tTQXa9Z4ChhQufpGYHHW7+gxZ9UCpV14/8LZKCA/YH6Uem
+                        QjE7suMmlmHbfQaW6+4ledsiti9kdlpp9kSsDfg7msUUq8+/7aiYIfxwcNMUpbdqJWGtGM
+                        jiHdMsDOnJSKZAojyBD6XLkhI40lfkKZOnMmzI65op9qfZcfGUZvbFKuh+GRdh5nNam/df
+                        eLDje26ke5VRBjyM9hes36pPhUf4Pj9/Nnywd53CJh6xIaaTH9+6YY7xNDJVjeg/Iy4T+S
+                        YuckQeSs/6BlP5brHMEzdKjmCKV73bpmof16uLrJv9Rjny5XZQrtDvwyWTGyHn4XyKyPK7
+                        HGFdKgN4Kz+9+zyVd/qM71g4lvD/NU7fC6A+oYaEHBCKq5DyY9Wp+tfnopG6QCtwD5f/u7
+                        Acp4d/95wbsHZ/MNtFANsAAAADAQABAAACAEhz64/iDAZFWNH1p/QlhihO1MUCtRWN4PgR
+                        8ZmGYmsdmvokxpbH3hhRo5SUEdCJw5d5Oz3rYUGPT4lod7K5dIB3wyV9y0WGy9vn/Z8IaV
+                        fRqGAjuJkEpH6ZGpWTkyV55F+Bw/Nh/k6rkL7yQRblNhtrVnoN/tScG/lcuP+CXr3hRvT+
+                        Z5zNGFxPmzzJb077RR4UvNfEJtqMm1fvmElvs/emg3B94/6ukfUAsOebHheGKIUhuGPiI2
+                        cisGgLQzjL4OC8kJz1BEIkJNJKFv3k5QFdBMTMS8j3Wyw/07AoikCjcUIraz9elJguf4uR
+                        Sj9moYV8mAwKTAAvGzeWZAbqH3sVjHSeSjJi9ltrENqrR0O7k68texkoa/l9xaNLeBoMyJ
+                        gYEeyDoogL3auTrzZnu8cegO52TnxF76CbMwWMLM4udTp8+lV44DDdB9bl+FeQkXOr3KEb
+                        Wtp4kiaStQvdQWNo/rml6nJZMtLazhsTZhXQbDmSp2vXZosXPcobDxOSpjDRyfYq3mKqdp
+                        buPVZRo70rhYudZHNUTy2zf5vbZZ65UmjdRrx4c/90s3Zoj3uk++ZhquK+qZ8CqSG+RxWP
+                        dOWORRHKGnVvja1JCsmohfPtmU4iC3EEf24sZQ/5Lk1TLNlah7bjbNP7j5h5IGZ3bzV5hS
+                        9eRYFFqa/NQDrmLx4BAAABACW7t6uiZrWxPd4EPL+qTrL86Iw1zQf0ZGkXcfQ61VLhFOVj
+                        dghQmaf98BO2rlbB3tOV13SVAfasriTr902C26dwVzWJ2O8LSW7zouXtYZB3uBxxoEcwnz
+                        oQwBUumBlURI9YTzY0yUjXt22e9KMTgu6Sh/t2YskqePCGgiaL4QMcwQA/NriV9WFDlvE/
+                        mArsblcbg5gkJ7Xca6hUd+r1ORjfkzx4h+RGElFXg2U5R6o+/UkybPQsxmntFbJwdSBorK
+                        sHVkH61RA9Hoj/XCAXM5BC7OUZyGoMjW9QLSdkc6CaeBePqZSA3LXFzZsMPgQqf3fdSe5x
+                        42fUsKeK0cpnTbUAAAEBAPYGVMBNB0ROQJdq8sls535lVHi5R4q5GoSs+SEBWiBF5VGLfh
+                        iplFUTdqIROY32vZOO5bcfv/xhgGtVM9kiXs6P5be57+Bqc1FQdSCDl8MWGf9wNAhmvN3a
+                        YFBeB77JE6vMYpy6+I4e0yM1Us+SixgnqKt/mJVx38e5MrCXiI0RiR5pEzQd7NONroExXM
+                        JhO7T4GzLMijm9QurcTeVyuTfbXemiD8eVbhM82/dpk90yKyPnx25GYagT0iBfCTUVA2qT
+                        W8N1rGlnNDuvIBHHr/r1x0bc8/nqzJZGk/WUjbgQALslKU3QCOTKP9zlomVt1ETMDBOzH8
+                        eeNTCS3V7OJYEAAAEBAOqhmtJcJiBhyVLiVBi004JLX/d4WdfYCA15+xnZXQDvN6W1aXnr
+                        /ic9FA0RG9BGDI8ZammcrToN6bLTYi3g1ScfeS+PA5UCULpy9cId3orP3xlD5Iu/tOuFYb
+                        6evWZJgUh5cFRCY+ITCp0RMOcjywkdyNxWrk5ABpHnP4maMQ8ImiwzSDRCRw35kOlD3odu
+                        vjrlhYv7ICPdQ0H5B7GJ2JEaEfD9KfsuMoqa9lxH/kfMh7i2Yn1uUqCNkjGvG8YDLz0gO5
+                        IEFsgOSCM7oMupO1Xd6U9mDszcAVZqjmyH5V9i2tUQzNU/5Tz0CXCkcn/9MJIQI/sewwcN
+                        HBK+AapLrFsAAAANZ2l0aHViLWNvbmZpZwECAwQFBg==
+                        -----END OPENSSH PRIVATE KEY-----
+  config:
+    activate:
+      on-profile: k8s

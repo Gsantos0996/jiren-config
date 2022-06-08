@@ -1,0 +1,78 @@
+server:
+  port: 7184
+
+spring:
+  application:
+    name: jiren-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/katu-digital/jiren-config-files.git
+          ignoreLocalSshSettings: true
+          hostKey: AAAAB3NzaC1yc2EAAAADAQABAAACAQC4vQ9puLgTNgH9MZM8OMAYAg42nsE0Wy8tTxnA/gC5BHZyCLm1WGTOschDImX4cgULcfvqI1jUR6dWJcDSsM0nx1gbgeAT7OYt/e5NHiywX6PY3L0V5yku0Oif1sYG31NGP1MFUjYS2hBzycxzXxUGImQu8TMt6blKVZk20KxPkoREe5Aq3RBFDNSHEv8rlBysUtHYzxqGPM2dpaomMHhWlJZTflLBk/CYKjJ8pV/oK9NLYzvsbTl5potW7DE+UHaUafO/Ons5g1A20mLi5B+3lA31ZXZ/fOS990Ofs/CemxVwdlWoX1qllAHZmduZI8qQKByXgVlPy2NAn8GFHt8fVabJJraPsupMw34FrB9ssRO7lvbJJmXu6C2SfoDXZnGJN7rw43y3n+JXvSBCKH/BeJCiQnKnMjaUJttEqCEidOSYyPm5Ib7IIkDlQZyxQO4yw7SIP+hqPrWX4PW9ID9rzUpS6jPUuwPmQGVEhLLroVab3YtyI1b6Ren7OxjKGP5UuDoT7itZK/7TwOa4QuBeHaPvXGM3Z58L6Qst8rfT5R2prQJvHi8TxsDPbdXywOzzFbAbqQuJoVIqpzEEoob3BbPkfchMoFySp9vQ8ZP2nwA78DmmZITvLuXEdPJ+QBYEkwP5B/H0tzkAI1BjDIP9BKjC4I4VtgtWDhHbH0BSVw
+          hostKeyAlgorithm: ssh-rsa
+          strictHostKeyChecking: false
+          privateKey: |
+                        -----BEGIN RSA PRIVATE KEY-----
+                        MIIJJwIBAAKCAgEAuL0Pabi4EzYB/TGTPDjAGAIONp7BNFsvLU8ZwP4AuQR2cgi5
+                        tVhkzrHIQyJl+HIFC3H76iNY1EenViXA0rDNJ8dYG4HgE+zmLf3uTR4ssF+j2Ny9
+                        FecpLtDon9bGBt9TRj9TBVI2EtoQc8nMc18VBiJkLvEzLem5SlWZNtCsT5KERHuQ
+                        Kt0QRQzUhxL/K5QcrFLR2M8ahjzNnaWqJjB4VpSWU35SwZPwmCoyfKVf6CvTS2M7
+                        7G05eaaLVuwxPlB2lGnzvzp7OYNQNtJi4uQft5QN9WV2f3zkvfdDn7PwnpsVcHZV
+                        qF9apZQB2ZnbmSPKkCgcl4FZT8tjQJ/BhR7fH1WmySa2j7LqTMN+BawfbLETu5b2
+                        ySZl7ugtkn6A12ZxiTe68ON8t5/iV70gQih/wXiQokJypzI2lCbbRKghInTkmMj5
+                        uSG+yCJA5UGcsUDuMsO0iD/oaj61l+D1vSA/a81KUuoz1LsD5kBlRISy66FWm92L
+                        ciNW+kXp+zsYyhj+VLg6E+4rWSv+08DmuELgXh2j71xjN2efC+kLLfK30+Udqa0C
+                        bx4vE8bAz23V8sDs8xWwG6kLiaFSKqcxBKKG9wWz5H3ITKBckqfb0PGT9p8AO/A5
+                        pmSE7y7lxHTyfkAWBJMD+Qfx9Lc5ACNQYwyD/QSowuCOFbYLVg4R2x9AUlcCAwEA
+                        AQKCAgAJDpPL3heAMZylWiHayPl589fYi63zMCk+8mrT0GAesf5Qlubr4hqHG6Yy
+                        zGPta0GeDweHshXvyleE3LL4YVydf6NtLc/biji6toFRXJJaT0YMIr5ObZfSSMGu
+                        3Gu2+InvnrkmQKKQCArYcmNIoLe6JkN9Hawhqxy/bTTmwBJCkG9VoC0wPMhIalmd
+                        Caxi6Y8CT8kj9Pta6241NWMDHks4C27XRxEtlmAsRZ1WCRGLo2JnhsTwUWaI9UZN
+                        i6TaZj16BzvA+1ABQNPU7DmW4BJCAMsyZbgKhgf83Dt/f+XjEL1bVyHZ8FrUVU5F
+                        6cofVubebGkCcH/9bn4+M9bb/Oh5Xm7tgkkhCZIiIOcy7JB0fW5PQvkR6ITr2Rc1
+                        Oq/XWuaoNcLdqntdPmYfR6vpuXINtizyJGZGlL4XH8e8jbVtvAgsHhDaiG+KejUc
+                        Tjs0mMGs85OUavJJT6jegytQeTiRTMaTccJIsw62/xh/YR8QgM8RBzYr9yikVibX
+                        r2BPYGU0nDkcsmE6/mznu6tlfrXNN/eU2WsSINxyHyvtaQaScp2DcnUiL+cGbs8q
+                        UuBHawN6dnQOPyDeh+2HZENhqVkwIeDq5gKpwimSpA977i2jMXf7JEcXOatFDZ9J
+                        ka/JFiuPVOe+LP8rCo4XuLlnBPO51aIrDktS1ekZhylvfszqUQKCAQEA56HT/jkf
+                        seRYgeEfxohaMNC3yGsoQR9gtXbOdCaKZXGuIbXlUke2G49v2W26tVEOXEMWhaor
+                        p53pctiqs+4EvCDQmT093I7vTQ81wkUI/boxJSVSztFvQotkX06RWSDijXxZ2Evn
+                        lR5vprXPx6wk2W8I/VdGy45QS3GETepLtwPbOK/BnqtZypkG45aBPiAYUmPTQ6CE
+                        kuqaQPLQWXMCvqy03cpPdHaBGIu0c87c8Vl8tK/IbIR4IkLTdXx3skARGutpx92B
+                        PPM1Ow1OuOudWogeENEUZBy0xEgvZX6n7gFJhySTv9aL2VD/RqXlzRIFdy5BrACz
+                        Hr5f0K3KC1L9zwKCAQEAzCxShZStYPCf9LL7baWmEhXc5vrJUwDjnDNvCMDrqPTF
+                        nqiWLSGWNjY/eFumfsDQQPs3A5UDY1eU9jt2s5Vmv4twXTvWFAVOiOWiKgxMFH26
+                        7ShY2xU0/mGkZ5zXcAegpY+mBUJSjHyGeJSRNpPA+X9evs2xA3AaqDr3qn4wj/wl
+                        uWhOXgHCscyR8BtL9wXqWA3tpTx6502psxYrAgtpjledP1ty15j+k08Rux1zaD59
+                        UPHteaFPGi9YU4GQTndh98Qx0AGZryhI+jjglcEEzVbX0QxYQWIx5lNjbJDbgMyp
+                        zJqMgM8oCEiMjJTWdQIJ7eL8MEyZEiqqhsaS7nJM+QKCAQAuyqMfjPyZHA7BFfAs
+                        U+kcSV2G8BauqR8JKVnlXs/AVGmfx7XunCvuf1hR7Pe1nw0umCLZl5m//4dkOt6p
+                        AGEWe+6HtjZj8r/mqjbq6rU5RD6fSV3kB6zZHX2GP0HfZmQ9vqwLpLHAjuhxHfM+
+                        W8kJ34NKYjIb9sDDrMfUUYtAClhjqCWN3wGBis44dXPgT+15306TL774Ssokaqiq
+                        GTCpwgu7bh4E4deMVNR8PIKngrNNcOElAtGd4jADYMRxTr3l2T6CMH3mCR9ssXCA
+                        rKAZ5LtmHEZpPt9Jc2eXsjFMRBhNY5cxPq77lIAtDmBQv944yDBeBbopcL28Uw8o
+                        oHhDAoIBAA8g2Zx8P7yHF9MRz/933q5IYG3c9z3nOvY/+WI0qUGDoYD4DOibLH4n
+                        1twcLmIF92hZNOJXEEE0JB16mnkEAPEAa/r8jAg/vGn4WeOztY9vIYKhErRpBdwz
+                        b/Mdc/khF44s7qhFGci/EVet6nSYzhuujF6m7w7KJ69/bwp6/y4sCL+MMwJULxDt
+                        j4KzAxXyokKUBZ/Qs2qgHoregaFNJy0c4NHo/MFs3LAdk7rBm+OFfdOZmXcBtNLD
+                        30+QshieT+wD5Yz8EV8hJQclX7645powbR1YRNHTbM8cLqnEsf8BKzO13+NLdjPm
+                        7EMeZCWXWRT/VKBfjJgEAU6rOAfjAEECggEACm4b2qZA8NnRPUPf7owBIrYZpvVk
+                        dUGNLwBpv2lKxuv9RcQKtCNV0FWVn/deptRvgIRVFVMGjE/l2TZXrB34YP9AQc4O
+                        SrQF+/r0bWRhb62BJK4hXwCZuyvznE8qWH+Mm3x7gT85nheeg81e8VCZSdBzkIwp
+                        IGolBKF5G7Jgsl0bPAg1LsqlGWCrZFOpApUnFZN1MY8Scy1ltB7b1OYLuBSCDkJv
+                        DGVbtJfgIISNzDMliXogB+jY2jpLABFocmQnBBSU8+ckIcizebxLbb5u0osrRI4s
+                        fWzM6QSy2bqDGHTi55BUoZlfgYrIxhnrR0m9vwW3VbjWRr2CoLxcN5BQ5Q==
+                        -----END RSA PRIVATE KEY-----
+          timeout: 4
+  security:
+    user:
+      name: diadia
+      password: diadia.2021
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
